@@ -1,0 +1,46 @@
+.auth
+  row-gap: rem(15)
+
+  &__desc
+    margin-bottom: rem(40)
+
+  &__input
+    width: rem(200)
+    background: cl('black-3')
+    border: rem(1) solid cl('gray-3')
+    border-radius: rem(50)
+    color: cl('white')
+    text-align: center
+    font-weight: 700
+    font-size: rem(14)
+    font-family: var(--font-rf-dewi)
+    -moz-appearance: textfield
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button
+      -webkit-appearance: none
+      margin: 0
+
+    &.error
+      border-color: cl('orange')
+
+  &__button
+    width: rem(200)
+    justify-content: center
+
+  &__codes
+    column-gap: rem(15)
+
+  &__code
+    background: cl('black-3')
+    border: rem(1) solid cl('gray-3')
+    border-radius: rem(15)
+    width: rem(47)
+    height: rem(67)
+    padding: 0
+
+    &::placeholder
+      color: cl('white')
+
+    &:focus
+      border-color: cl('orange')
